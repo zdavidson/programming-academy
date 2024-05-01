@@ -1,11 +1,11 @@
 import React from "react";
-import BaseButton from "./BaseButton";
+import BaseButton from "./buttons/BaseButton";
 
 const EnrollButton = ({ light }: { light?: boolean }) => {
   return (
-    <BaseButton href="/enroll" light={light}>
-      Enroll Now
-    </BaseButton>
+    <a className="button__sign-up" href="/api/auth/signup">
+      <BaseButton>Enroll Now</BaseButton>
+    </a>
   );
 };
 

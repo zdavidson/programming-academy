@@ -2,7 +2,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import React from "react";
 import EnrollButton from "../shared/EnrollButton";
-import BaseButton from "../shared/BaseButton";
+import BaseLinkButton from "../shared/buttons/BaseLinkButton";
 import Image from "next/image";
 import { COLORS } from "@/styles/colors";
 
@@ -23,9 +23,9 @@ const Hero = () => {
           Don&apos;t waste another second. Start learning to code today.
         </Typography>
         <EnrollButton />
-        <BaseButton href="/" light sx={{ marginLeft: "1rem" }}>
+        <BaseLinkButton href="/" light sx={{ marginLeft: "1rem" }}>
           Learn More
-        </BaseButton>
+        </BaseLinkButton>
       </Box>
       <Box>
         <Box
