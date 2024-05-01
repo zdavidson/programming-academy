@@ -16,6 +16,15 @@ const theme = createTheme({
       fontWeight: 800,
       marginBottom: "1rem",
     },
+    h3: {
+      marginBottom: "1rem",
+    },
+    h4: {
+      marginBottom: "1rem",
+    },
+    h5: {
+      marginBottom: "1rem",
+    },
     body2: {
       fontSize: "1.25rem",
     },
