@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import React from "react";
 import NavElement from "./NavElement";
 import EnrollButton from "../shared/EnrollButton";
-import Logo from "./Logo";
+import Logo from "../nav/Logo";
 import LoginButton from "./LoginButton";
 
 const Nav = () => {

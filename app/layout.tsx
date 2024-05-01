@@ -25,12 +25,7 @@ export default function RootLayout({
       <UserProvider>
         <body className={inter.className}>
           <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-            <ThemeProvider theme={theme}>
-              <PageContainer>
-                <Nav />
-                {children}
-              </PageContainer>
-            </ThemeProvider>
+            <ThemeProvider theme={theme}>{children}</ThemeProvider>
           </AppRouterCacheProvider>
         </body>
       </UserProvider>

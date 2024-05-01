@@ -6,17 +6,20 @@ import Box from "@mui/material/Box";
 import React from "react";
 import Pricing from "@/components/home/Pricing";
 import Curriculum from "@/components/home/Curriculum";
+import PageContainer from "@/components/shared/PageContainer";
+import Nav from "@/components/nav/Nav";
 
 const Home = () => {
   return (
-    <Box>
+    <PageContainer>
+      <Nav />
       <Hero />
       <Why />
       <CourseDetails />
       <Pricing />
       <Curriculum />
       <AboutUs />
-    </Box>
+    </PageContainer>
   );
 };
 
