@@ -6,6 +6,7 @@ import { ThemeProvider } from "@mui/material";
 import theme from "@/styles/theme";
 import Nav from "@/components/nav/Nav";
 import PageContainer from "@/components/shared/PageContainer";
+import { UserProvider } from "@auth0/nextjs-auth0/client";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,16 +22,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-          <ThemeProvider theme={theme}>
-            <PageContainer>
-              <Nav />
-              {children}
-            </PageContainer>
-          </ThemeProvider>
-        </AppRouterCacheProvider>
-      </body>
+      <UserProvider>
+        <body className={inter.className}>
+          <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+            <ThemeProvider theme={theme}>
+              <PageContainer>
+                <Nav />
+                {children}
+              </PageContainer>
+            </ThemeProvider>
+          </AppRouterCacheProvider>
+        </body>
+      </UserProvider>
     </html>
   );
 }
